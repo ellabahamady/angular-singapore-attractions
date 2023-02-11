@@ -1,0 +1,11 @@
+<section *ngIf="isDetail">
+    <img src="{{ data?.image }}">
+    <article class="title">
+        <h6>{{ data?.name }}</h6>
+    </article>
+    <article class="description">
+        <p>{{ data?.description }}</p>
+        <p><img src="../../../assets/img/icon-address.png" class="icon-address"> {{ data?.address }}</p>
+        <p><img src="../../../assets/img/icon-url.png" class="icon-url"> {{ data?.url }}</p>
+    </article>
+</section>

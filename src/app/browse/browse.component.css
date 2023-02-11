@@ -1,0 +1,55 @@
+aside {
+    width: 230px;
+    height: 100%;
+    float: left;
+    background-color: #282c37;
+    font-size: 12px;
+    padding: 10px;
+}
+
+header {
+    background-color: #f4f7fa;
+    padding: 10px 30px;
+}
+
+header img {
+    width: 20px;
+}
+
+header p {
+    font-weight: 700;
+}
+
+.list-attraction li {
+    border-bottom: 0.1px solid #1c1f27;
+    padding: 5px 10px;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0 !important;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #92d72e;
+    background-color: #1c1f27;
+    font-weight: 500;
+}
+
+.nav-item button {
+    width: 20px;
+}
+
+.form-select {
+    border: 1px solid #1c1f27;
+    background-color: #282c37; 
+    color: #647d80; 
+    margin-bottom: 30px;
+}
+
+/* hide close button on info window */
+/* https://stackoverflow.com/questions/20544932/remove-close-icon-from-the-google-map-info-window */
+::ng-deep .gm-ui-hover-effect {
+    display: none !important;
+}

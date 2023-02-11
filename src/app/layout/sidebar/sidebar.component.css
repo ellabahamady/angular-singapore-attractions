@@ -1,0 +1,29 @@
+aside {
+    width: 100px;
+    height: 100%;
+    float: left;
+    background-color: #313541;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none ;
+}
+
+img {
+    width: 30px;
+    margin-top: 15px;
+}
+
+.nav-pills .nav-link {
+    border-bottom: solid 0.5px #282c37;
+    border-radius: 0 !important;
+    color: #647d80;
+    text-align: center;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #ffffff;
+    background-color: #7fcee1;
+}

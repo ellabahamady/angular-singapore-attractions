@@ -1,0 +1,34 @@
+<aside>
+    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
+        <li ngbNavItem="browse">
+            <a ngbNavLink routerLink="/browse">
+                <img src="assets/img/icon-browse.png" >
+                <p>Browse</p>
+            </a>
+        </li>
+        <li ngbNavItem="attraction">
+            <a ngbNavLink routerLink="/attraction">
+                <img src="assets/img/icon-suggest.png" >
+                <p>Suggest Attraction</p>
+            </a>
+        </li>
+        <li ngbNavItem="video">
+            <a ngbNavLink routerLink="/video">
+                <img src="assets/img/icon-video.png" >
+                <p>Videos</p>
+            </a>
+        </li>
+        <li ngbNavItem="blog">
+            <a ngbNavLink routerLink="/blog">
+                <img src="assets/img/icon-blog.png" >
+                <p>Blog</p>
+            </a>
+        </li>
+        <li ngbNavItem="about">
+            <a ngbNavLink routerLink="/about">
+                <img src="assets/img/icon-about.png" >
+                <p>About</p>
+            </a>
+        </li>
+    </ul>
+</aside>

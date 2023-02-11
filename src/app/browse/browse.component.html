@@ -1,0 +1,57 @@
+<!-- begin:: List Attraction -->
+<aside>
+    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills list-attraction" orientation="vertical">
+        <li ngbNavItem="filter">
+            <select class="form-select form-select-sm" aria-label="Default select example">
+                <option selected>Filter by favorite</option>
+                <option value="1">Filter by name</option>
+              </select>
+        </li>
+        <li ngbNavItem="{{ item.id }}" *ngFor="let item of data">
+            <a ngbNavLink (click)="getDetail(item, item.id)">{{ item.name }}</a>
+        </li>
+    </ul>
+</aside>
+<!-- end:: List Attraction -->
+
+<!-- begin:: Header -->
+<header>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <p>TOP-RATED TOURIST ATTRACTIONS IN SINGAPORE</p>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <button class="btn nav-link">
+                    <img src="../../assets/img/icon-setting.png" >
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="btn nav-link">
+                    <img src="../../assets/img/icon-ask.png" >
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="btn nav-link" (click)="closeDetail()">
+                    <img src="../../assets/img/icon-close.png" >
+                </button>
+            </li>
+          </ul>
+        </div>
+    </nav>
+</header>
+<!-- end:: Header -->
+
+<!-- begin:: Content -->
+<section>
+    <google-map width="940px" height="530px" [center]="this.center" [zoom]="this.zoom">
+        <map-marker #markerElem="mapMarker" *ngFor="let marker of data"
+            [position]="marker.position"
+            [label]="marker.name"
+            icon="{{ icon }}"
+            (mapClick)="getDetail(marker, markerElem)">
+        </map-marker>
+        <map-info-window>{{ info }}</map-info-window>
+    </google-map>
+    <app-detail></app-detail>
+</section>
+<!-- end:: Content -->
