@@ -1,13 +1,6 @@
-# XtremaxTest
-Software Developer Frontend - WST
-Nurlaela Bahamady
-10 February 2023
+## Singapore Attractions
 
-# Data JSON File
-"assets/js/data.json"
-
-# Service to get data from JSON file
-"app/service/data.service.ts"
+AngularJS & Google Maps API
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
 
